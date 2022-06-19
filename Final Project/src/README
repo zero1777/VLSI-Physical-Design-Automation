@@ -1,0 +1,18 @@
+--How to Compile
+  In this directory, enter the following command:
+  $ make
+  It will generate the executable file "cell_move_router" in "Final_Project/bin/".
+
+  If you want to remove it, please enter the following command:
+  $ make clean
+
+--How to Run
+  In this directory, enter the following command:
+  Usage: ../bin/cell_move_router <input.txt> <output.txt>
+  e.g.:
+  $ ../bin/cell_move_router ./testcases/case1.txt ../output/case1.txt
+
+  In "Final_Project/bin/", enter the following command:
+  Usage: ./bin/cell_move_router <input.txt> <output.txt>
+  e.g.:
+  $ ./cell_move_router ./testcases/case1.txt ../output/case1.txt

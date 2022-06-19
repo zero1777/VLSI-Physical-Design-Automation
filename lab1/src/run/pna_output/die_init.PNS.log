@@ -1,0 +1,21 @@
+
+Name of design : die_init
+Number of cell instance masters in the library : 46
+Number of cell instances in the design : 5534
+Target IR drop : 150.000 mV
+Processing net VDD ...
+Average power dissipation in die_init :   100.00 mW
+Power supply voltage :     1.50 V
+Average current in die_init :    66.67 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in die_init : 30.05 mV
+Maximum current in die_init : 19.560 mA
+Processing net VSS ...
+Average power dissipation in die_init :   100.00 mW
+Power supply voltage :     1.50 V
+Average current in die_init :    66.67 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in die_init : 31.65 mV
+Maximum current in die_init : 20.187 mA
+Memory usage for design data :      39010.304 Kbytes
+Overall takes     0.04 seconds

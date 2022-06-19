@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : aes_core
+Version: S-2021.06-SP1
+Date   : Fri Oct 15 15:19:10 2021
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  9.27%
+
+  Startpoint: AES_CORE_CONTROL_UNIT/state_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: AES_CORE_DATAPATH/bkp_reg_1__11_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.28       0.28
+  AES_CORE_CONTROL_UNIT/state_reg_0_/CK (DFFRX2)          0.00       0.28 r
+  AES_CORE_CONTROL_UNIT/state_reg_0_/Q (DFFRX2)           0.57       0.84 f
+  AES_CORE_CONTROL_UNIT/U7/Y (NOR2BX2)                    0.19 &     1.04 f
+  AES_CORE_CONTROL_UNIT/U67/Y (NAND2X1)                   0.28 &     1.32 r
+  AES_CORE_CONTROL_UNIT/U39/Y (INVX3)                     0.12 &     1.44 f
+  AES_CORE_CONTROL_UNIT/U30/Y (AOI2BB1X2)                 0.12 &     1.56 r
+  AES_CORE_CONTROL_UNIT/U29/Y (OA22X2)                    0.19 &     1.75 r
+  AES_CORE_CONTROL_UNIT/U17/Y (NAND2X2)                   0.06 &     1.81 f
+  AES_CORE_CONTROL_UNIT/col_en[1] (control_unit)          0.00       1.81 f
+  AES_CORE_DATAPATH/col_en_cnt_unit[1] (datapath)         0.00       1.81 f
+  AES_CORE_DATAPATH/U281/Y (INVX3)                        0.05 &     1.86 r
+  AES_CORE_DATAPATH/U2795/Y (OR2X4)                       0.12 &     1.98 r
+  AES_CORE_DATAPATH/U2796/Y (NAND3X4)                     0.09 &     2.07 f
+  AES_CORE_DATAPATH/U252/Y (BUFX16)                       0.14 @     2.22 f
+  AES_CORE_DATAPATH/U253/Y (INVX12)                       0.07 @     2.29 r
+  AES_CORE_DATAPATH/U1603/Y (NAND2X6)                     0.08 &     2.37 f
+  AES_CORE_DATAPATH/U1873/Y (NOR2X2)                      0.11 &     2.48 r
+  AES_CORE_DATAPATH/U1872/Y (OAI211X2)                    0.14 &     2.62 f
+  AES_CORE_DATAPATH/U426/Y (BUFX16)                       0.18 @     2.80 f
+  AES_CORE_DATAPATH/U1897/Y (OA22X1)                      0.36 @     3.16 f
+  AES_CORE_DATAPATH/U3127/Y (NAND3X2)                     0.16 &     3.32 r
+  AES_CORE_DATAPATH/U543/Y (INVX3)                        0.06 &     3.38 f
+  AES_CORE_DATAPATH/U2081/Y (OAI221X2)                    0.19 &     3.57 r
+  AES_CORE_DATAPATH/U629/Y (XNOR2X1)                      0.23 &     3.80 f
+  AES_CORE_DATAPATH/U709/Y (AOI221X1)                     0.22 &     4.02 r
+  AES_CORE_DATAPATH/U3100/Y (INVX1)                       0.09 &     4.11 f
+  AES_CORE_DATAPATH/U3101/Y (AND3X4)                      0.18 &     4.29 f
+  AES_CORE_DATAPATH/U707/Y (OA22X4)                       0.26 &     4.55 f
+  AES_CORE_DATAPATH/U362/Y (NAND2X1)                      0.15 &     4.70 r
+  AES_CORE_DATAPATH/U1515/Y (AOI2BB2X1)                   0.18 &     4.88 f
+  AES_CORE_DATAPATH/U1514/Y (OAI221X2)                    0.16 &     5.04 r
+  AES_CORE_DATAPATH/bkp_reg_1__11_/D (DFFRX1)             0.00 &     5.04 r
+  data arrival time                                                  5.04
+
+  clock CLK (rise edge)                                   5.00       5.00
+  clock network delay (propagated)                        0.28       5.28
+  AES_CORE_DATAPATH/bkp_reg_1__11_/CK (DFFRX1)            0.00       5.28 r
+  library setup time                                     -0.24       5.04
+  data required time                                                 5.04
+  --------------------------------------------------------------------------
+  data required time                                                 5.04
+  data arrival time                                                 -5.04
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+1

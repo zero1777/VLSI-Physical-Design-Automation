@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : aes_core
+Version: S-2021.06-SP1
+Date   : Thu Oct 14 15:58:17 2021
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  8.25%
+
+  Startpoint: AES_CORE_CONTROL_UNIT/state_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: AES_CORE_DATAPATH/col_reg_1__21_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.25       0.25
+  AES_CORE_CONTROL_UNIT/state_reg_2_/CK (DFFRX1)          0.00       0.25 r
+  AES_CORE_CONTROL_UNIT/state_reg_2_/Q (DFFRX1)           0.62       0.87 f
+  AES_CORE_CONTROL_UNIT/U10/Y (NOR2BX1)                   0.22 &     1.09 r
+  AES_CORE_CONTROL_UNIT/U62/Y (NAND2X1)                   0.14 &     1.23 f
+  AES_CORE_CONTROL_UNIT/U64/Y (OAI211X1)                  0.19 &     1.41 r
+  AES_CORE_CONTROL_UNIT/encrypt_decrypt (control_unit)
+                                                          0.00       1.41 r
+  AES_CORE_DATAPATH/IN46 (datapath)                       0.00       1.41 r
+  AES_CORE_DATAPATH/U222/Y (BUFX4)                        0.31 &     1.72 r
+  AES_CORE_DATAPATH/U815/Y (NOR2X1)                       0.11 &     1.83 f
+  AES_CORE_DATAPATH/U227/Y (BUFX4)                        0.44 @     2.27 f
+  AES_CORE_DATAPATH/U1639/Y (AOI2BB2X2)                   0.30 @     2.58 f
+  AES_CORE_DATAPATH/U1638/Y (OAI22XL)                     0.31 &     2.88 r
+  AES_CORE_DATAPATH/U1637/Y (NOR2BX1)                     0.45 &     3.33 r
+  AES_CORE_DATAPATH/U755/Y (NAND2X2)                      0.53 &     3.87 f
+  AES_CORE_DATAPATH/U1968/Y (OA22XL)                      0.57 &     4.43 f
+  AES_CORE_DATAPATH/U129/Y (OAI221XL)                     0.16 &     4.59 r
+  AES_CORE_DATAPATH/key_bus[21] (datapath)                0.00       4.59 r
+  U43/Y (BUFX2)                                           0.39 &     4.98 r
+  AES_CORE_DATAPATH/IN18 (datapath)                       0.00       4.98 r
+  AES_CORE_DATAPATH/U1143/Y (XOR2X1)                      0.28 &     5.26 f
+  AES_CORE_DATAPATH/U84/Y (OAI221X1)                      0.47 &     5.74 r
+  AES_CORE_DATAPATH/U621/Y (XNOR2XL)                      0.40 &     6.13 f
+  AES_CORE_DATAPATH/U689/Y (AOI221XL)                     0.38 &     6.51 r
+  AES_CORE_DATAPATH/U688/Y (AOI221XL)                     0.18 &     6.69 f
+  AES_CORE_DATAPATH/U687/Y (OA22XL)                       0.57 &     7.26 f
+  AES_CORE_DATAPATH/U1246/Y (NAND2XL)                     0.23 &     7.49 r
+  AES_CORE_DATAPATH/U883/Y (INVX1)                        0.11 &     7.60 f
+  AES_CORE_DATAPATH/U1682/Y (OAI22XL)                     0.38 &     7.98 r
+  AES_CORE_DATAPATH/col_reg_1__21_/D (DFFRX1)             0.00 &     7.98 r
+  data arrival time                                                  7.98
+
+  clock CLK (rise edge)                                   8.00       8.00
+  clock network delay (propagated)                        0.25       8.25
+  AES_CORE_DATAPATH/col_reg_1__21_/CK (DFFRX1)            0.00       8.25 r
+  library setup time                                     -0.27       7.99
+  data required time                                                 7.99
+  --------------------------------------------------------------------------
+  data required time                                                 7.99
+  data arrival time                                                 -7.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

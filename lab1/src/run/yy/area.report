@@ -1,0 +1,42 @@
+ 
+****************************************
+Report : area
+Design : aes_core
+Version: S-2021.06-SP1
+Date   : Tue Oct  5 11:43:25 2021
+****************************************
+
+Library(s) Used:
+
+    slow (File: /theda21_2/CBDK_IC_Contest/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                          160
+Number of nets:                           212
+Number of cells:                           21
+Number of combinational cells:             19
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         13
+Number of references:                       9
+
+Combinational area:              40827.561548
+Buf/Inv area:                     3460.998546
+Noncombinational area:           28879.562737
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 69707.124285
+Total area:                 undefined
+
+Core Area:                    101015
+Aspect Ratio:                 0.9969
+Utilization Ratio:            0.6894
+
+
+The above information was reported from the logical library. The following are from the physical library:
+
+  Total moveable cell area: 69506.8
+  Total fixed cell area: 200.3
+  Total physical cell area: 69707.1
+  Core area: (30000 30000 348320 347340)
+1

@@ -1,0 +1,79 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : aes_core
+Version: S-2021.06-SP1
+Date   : Sun Oct 17 10:08:44 2021
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  9.89%
+
+  Startpoint: AES_CORE_CONTROL_UNIT/state_reg_2_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: AES_CORE_DATAPATH/bkp_reg_0__9_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.27       0.27
+  AES_CORE_CONTROL_UNIT/state_reg_2_/CK (DFFRX2)          0.00       0.27 r
+  AES_CORE_CONTROL_UNIT/state_reg_2_/Q (DFFRX2)           0.59       0.86 f
+  AES_CORE_CONTROL_UNIT/U28/Y (CLKINVX3)                  0.06 &     0.92 r
+  AES_CORE_CONTROL_UNIT/U21/Y (NAND2X2)                   0.06 &     0.98 f
+  AES_CORE_CONTROL_UNIT/U34/Y (CLKINVX4)                  0.06 &     1.05 r
+  AES_CORE_CONTROL_UNIT/U62/Y (NAND2X2)                   0.08 &     1.13 f
+  AES_CORE_CONTROL_UNIT/U64/Y (OAI211X2)                  0.08 &     1.21 r
+  AES_CORE_CONTROL_UNIT/U2/Y (INVX3)                      0.07 &     1.28 f
+  AES_CORE_CONTROL_UNIT/U3/Y (INVX4)                      0.06 &     1.34 r
+  AES_CORE_CONTROL_UNIT/encrypt_decrypt (control_unit)
+                                                          0.00       1.34 r
+  AES_CORE_DATAPATH/IN48 (datapath)                       0.00       1.34 r
+  AES_CORE_DATAPATH/U224/Y (BUFX12)                       0.15 @     1.49 r
+  AES_CORE_DATAPATH/U815/Y (NOR2X6)                       0.07 @     1.56 f
+  AES_CORE_DATAPATH/U1639/Y (AOI2BB2X1)                   0.25 &     1.81 f
+  AES_CORE_DATAPATH/U1638/Y (OAI22X1)                     0.20 &     2.01 r
+  AES_CORE_DATAPATH/U2006/Y (NAND2X2)                     0.12 &     2.13 f
+  AES_CORE_DATAPATH/U2031/Y (INVX6)                       0.12 &     2.25 r
+  AES_CORE_DATAPATH/U755/Y (NAND2X6)                      0.20 @     2.44 f
+  AES_CORE_DATAPATH/U1956/Y (OA22X1)                      0.49 @     2.93 f
+  AES_CORE_DATAPATH/U117/Y (OAI221X1)                     0.15 &     3.08 r
+  AES_CORE_DATAPATH/key_bus[9] (datapath)                 0.00       3.08 r
+  U41/Y (INVX3)                                           0.09 &     3.17 f
+  U46/Y (CLKINVX6)                                        0.10 &     3.27 r
+  AES_CORE_DATAPATH/IN32 (datapath)                       0.00       3.27 r
+  AES_CORE_DATAPATH/U1113/Y (XOR2X2)                      0.17 &     3.44 f
+  AES_CORE_DATAPATH/U96/Y (OAI221X2)                      0.17 &     3.61 r
+  AES_CORE_DATAPATH/U446/Y (BUFX8)                        0.17 &     3.78 r
+  AES_CORE_DATAPATH/U630/Y (XNOR2X2)                      0.16 &     3.93 f
+  AES_CORE_DATAPATH/U586/Y (AOI221X2)                     0.22 &     4.16 r
+  AES_CORE_DATAPATH/U585/Y (AOI221X2)                     0.13 &     4.28 f
+  AES_CORE_DATAPATH/U584/Y (OA22X4)                       0.36 &     4.64 f
+  AES_CORE_DATAPATH/U1294/Y (NAND2X2)                     0.12 &     4.76 r
+  AES_CORE_DATAPATH/U1521/Y (AOI2BB2X2)                   0.11 &     4.87 f
+  AES_CORE_DATAPATH/U1520/Y (OAI221X1)                    0.15 &     5.02 r
+  AES_CORE_DATAPATH/bkp_reg_0__9_/D (DFFRX1)              0.00 &     5.02 r
+  data arrival time                                                  5.02
+
+  clock CLK (rise edge)                                   5.00       5.00
+  clock network delay (propagated)                        0.27       5.27
+  AES_CORE_DATAPATH/bkp_reg_0__9_/CK (DFFRX1)             0.00       5.27 r
+  library setup time                                     -0.25       5.02
+  data required time                                                 5.02
+  --------------------------------------------------------------------------
+  data required time                                                 5.02
+  data arrival time                                                 -5.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

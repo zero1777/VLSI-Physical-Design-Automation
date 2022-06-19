@@ -1,0 +1,5 @@
+Compile: (in /src file)
+    make
+    g++ ./main.cpp LCN.cpp Partition.cpp -std=c++11 -O3 --optimize -o ../bin/ hw2
+Execute: (in /bin file)
+    ./hw2 ../testcases/p2-1.nets ..testcases/p2-1.cells ../output/p2-1.out

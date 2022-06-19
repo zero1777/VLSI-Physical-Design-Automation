@@ -1,0 +1,21 @@
+
+Name of design : aes_core
+Number of cell instance masters in the library : 46
+Number of cell instances in the design : 5534
+Target IR drop : 150.000 mV
+Processing net VDD ...
+Average power dissipation in aes_core :   100.00 mW
+Power supply voltage :     1.50 V
+Average current in aes_core :    66.67 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in aes_core : 30.04 mV
+Maximum current in aes_core : 19.565 mA
+Processing net VSS ...
+Average power dissipation in aes_core :   100.00 mW
+Power supply voltage :     1.50 V
+Average current in aes_core :    66.67 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in aes_core : 31.64 mV
+Maximum current in aes_core : 20.180 mA
+Memory usage for design data :      39010.304 Kbytes
+Overall takes     0.06 seconds

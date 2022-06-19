@@ -1,0 +1,67 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : aes_core
+Version: S-2021.06-SP1
+Date   : Thu Oct 14 23:31:10 2021
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  6.68%
+
+  Startpoint: AES_CORE_CONTROL_UNIT/state_reg_3_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: AES_CORE_DATAPATH/col_reg_0__4_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.28       0.28
+  AES_CORE_CONTROL_UNIT/state_reg_3_/CK (DFFRX2)          0.00       0.28 r
+  AES_CORE_CONTROL_UNIT/state_reg_3_/Q (DFFRX2)           0.59       0.87 f
+  AES_CORE_CONTROL_UNIT/U10/Y (NOR2BX4)                   0.16 &     1.03 f
+  AES_CORE_CONTROL_UNIT/U66/Y (NAND2X1)                   0.24 &     1.27 r
+  AES_CORE_CONTROL_UNIT/U35/Y (CLKINVX1)                  0.22 &     1.49 f
+  AES_CORE_CONTROL_UNIT/U15/Y (NOR2X2)                    0.15 &     1.64 r
+  AES_CORE_CONTROL_UNIT/U137/Y (NAND2X1)                  0.11 &     1.75 f
+  AES_CORE_CONTROL_UNIT/sbox_sel[0] (control_unit)        0.00       1.75 f
+  AES_CORE_DATAPATH/sbox_sel[0] (datapath)                0.00       1.75 f
+  AES_CORE_DATAPATH/U26/Y (NOR2X2)                        0.37 &     2.12 r
+  AES_CORE_DATAPATH/U231/Y (INVX3)                        0.21 &     2.33 f
+  AES_CORE_DATAPATH/U373/Y (NAND3X2)                      0.47 &     2.80 r
+  AES_CORE_DATAPATH/U10/Y (OAI221X4)                      0.50 &     3.29 f
+  AES_CORE_DATAPATH/U1625/Y (AOI222XL)                    0.43 &     3.73 r
+  AES_CORE_DATAPATH/U1182/Y (XOR2X2)                      0.30 &     4.02 f
+  AES_CORE_DATAPATH/U101/Y (OAI221X2)                     0.36 &     4.38 r
+  AES_CORE_DATAPATH/U635/Y (XNOR2X1)                      0.27 &     4.65 f
+  AES_CORE_DATAPATH/U598/Y (AOI221X1)                     0.24 &     4.89 r
+  AES_CORE_DATAPATH/U597/Y (AOI221XL)                     0.12 &     5.01 f
+  AES_CORE_DATAPATH/U596/Y (OA22X2)                       0.45 &     5.46 f
+  AES_CORE_DATAPATH/U1332/Y (NAND2X1)                     0.18 &     5.64 r
+  AES_CORE_DATAPATH/U936/Y (INVX2)                        0.09 &     5.74 f
+  AES_CORE_DATAPATH/U802/Y (OAI22XL)                      0.28 &     6.02 r
+  AES_CORE_DATAPATH/col_reg_0__4_/D (DFFRX1)              0.00 &     6.02 r
+  data arrival time                                                  6.02
+
+  clock CLK (rise edge)                                   6.00       6.00
+  clock network delay (propagated)                        0.27       6.27
+  AES_CORE_DATAPATH/col_reg_0__4_/CK (DFFRX1)             0.00       6.27 r
+  library setup time                                     -0.26       6.02
+  data required time                                                 6.02
+  --------------------------------------------------------------------------
+  data required time                                                 6.02
+  data arrival time                                                 -6.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

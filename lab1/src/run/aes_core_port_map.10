@@ -1,0 +1,59 @@
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SBOX/SBOX_2_/enc_dec   $svf_impl/aes_core/AES_CORE_DATAPATH/SBOX/SBOX_2_/enc_dec
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SBOX/SBOX_3_/enc_dec   $svf_impl/aes_core/AES_CORE_DATAPATH/SBOX/SBOX_3_/enc_dec
+guide_constraints -body { AES_CORE_DATAPATH/SBOX/SBOX_3_ } -equivalent { AES_CORE_DATAPATH/SBOX/SBOX_3_/enc_dec  ~ AES_CORE_DATAPATH/SBOX/SBOX_3_/IN0 }
+guide_constraints -body { AES_CORE_DATAPATH/SBOX/SBOX_2_ } -equivalent { AES_CORE_DATAPATH/SBOX/SBOX_2_/enc_dec  ~ AES_CORE_DATAPATH/SBOX/SBOX_2_/IN0 }
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/sbox_sel[2]   $svf_impl/aes_core/AES_CORE_DATAPATH/sbox_sel[2]
+guide_constraints -body { AES_CORE_DATAPATH } -equivalent { AES_CORE_DATAPATH/sbox_sel[2]  ~ AES_CORE_DATAPATH/IN45 }
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/enc_dec   $svf_impl/aes_core/AES_CORE_DATAPATH/enc_dec
+guide_constraints -body { AES_CORE_DATAPATH } -equivalent { AES_CORE_DATAPATH/enc_dec  ~ AES_CORE_DATAPATH/IN46 }
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_CONTROL_UNIT/last_round   $svf_impl/aes_core/AES_CORE_CONTROL_UNIT/last_round
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/mode_ctr   $svf_impl/aes_core/AES_CORE_DATAPATH/mode_ctr
+guide_constraints -body { AES_CORE_DATAPATH } -equivalent { AES_CORE_DATAPATH/mode_ctr  ~ AES_CORE_DATAPATH/IN47 }
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_CONTROL_UNIT/mode_cbc   $svf_impl/aes_core/AES_CORE_CONTROL_UNIT/mode_cbc
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/mode_cbc   $svf_impl/aes_core/AES_CORE_DATAPATH/mode_cbc
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[5]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[5]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[4]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[4]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[3]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[3]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[2]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[2]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[1]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[1]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[0]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[0]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[13]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[13]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[12]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[12]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[11]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[11]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[10]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[10]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[9]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[9]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[8]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[8]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[7]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[7]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[6]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[6]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[21]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[21]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[20]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[20]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[19]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[19]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[18]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[18]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[17]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[17]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[16]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[16]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[15]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[15]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[14]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[14]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[29]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[29]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[28]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[28]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[27]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[27]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[26]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[26]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[25]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[25]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[24]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[24]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[23]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[23]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[22]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[22]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[31]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[31]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[30]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/data_in[30]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/swap_type[1]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/swap_type[1]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_OUT/swap_type[1]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_OUT/swap_type[1]
+guide_constraints -body { AES_CORE_DATAPATH/SWAP_OUT } -equivalent { AES_CORE_DATAPATH/SWAP_OUT/swap_type[1]  ~ AES_CORE_DATAPATH/SWAP_OUT/IN0 }
+guide_constraints -body { AES_CORE_DATAPATH/SWAP_IN } -equivalent { AES_CORE_DATAPATH/SWAP_IN/swap_type[1]  ~ AES_CORE_DATAPATH/SWAP_IN/IN0 }
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_IN/swap_type[0]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_IN/swap_type[0]
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/SWAP_OUT/swap_type[0]   $svf_impl/aes_core/AES_CORE_DATAPATH/SWAP_OUT/swap_type[0]
+guide_constraints -body { AES_CORE_DATAPATH/SWAP_OUT } -equivalent { AES_CORE_DATAPATH/SWAP_OUT/swap_type[0]  ~ AES_CORE_DATAPATH/SWAP_OUT/IN1 }
+guide_constraints -body { AES_CORE_DATAPATH/SWAP_IN } -equivalent { AES_CORE_DATAPATH/SWAP_IN/swap_type[0]  ~ AES_CORE_DATAPATH/SWAP_IN/IN1 }
+guide_constraints -body { AES_CORE_DATAPATH } -equivalent { AES_CORE_DATAPATH/rst_n    AES_CORE_DATAPATH/IN48 }
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_CONTROL_UNIT/start   $svf_impl/aes_core/AES_CORE_CONTROL_UNIT/start
+set_user_match   -inverted   $svf_ref/aes_core/AES_CORE_DATAPATH/key_init   $svf_impl/aes_core/AES_CORE_DATAPATH/key_init
+
+#-------------------------------------------------------------------
+

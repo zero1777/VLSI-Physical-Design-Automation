@@ -1,0 +1,84 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : aes_core
+Version: S-2021.06-SP1
+Date   : Sun Oct 17 12:21:12 2021
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays = 11.75%
+
+  Startpoint: AES_CORE_CONTROL_UNIT/state_reg_0_
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: AES_CORE_DATAPATH/SBOX/SBOX_3_/out_gf_pp_reg_3_
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.28       0.28
+  AES_CORE_CONTROL_UNIT/state_reg_0_/CK (DFFRX4)          0.00       0.28 r
+  AES_CORE_CONTROL_UNIT/state_reg_0_/Q (DFFRX4)           0.51       0.80 f
+  AES_CORE_CONTROL_UNIT/U97/Y (NAND2X4)                   0.09 &     0.88 r
+  AES_CORE_CONTROL_UNIT/U131/Y (INVX4)                    0.07 &     0.95 f
+  AES_CORE_CONTROL_UNIT/U64/Y (OAI211X2)                  0.16 &     1.11 r
+  AES_CORE_CONTROL_UNIT/U160/Y (INVX3)                    0.09 &     1.20 f
+  AES_CORE_CONTROL_UNIT/U5/Y (INVX8)                      0.08 &     1.28 r
+  AES_CORE_CONTROL_UNIT/encrypt_decrypt (control_unit)
+                                                          0.00       1.28 r
+  AES_CORE_DATAPATH/IN49 (datapath)                       0.00       1.28 r
+  AES_CORE_DATAPATH/U230/Y (BUFX16)                       0.13 @     1.40 r
+  AES_CORE_DATAPATH/U231/Y (INVX12)                       0.07 @     1.47 f
+  AES_CORE_DATAPATH/U3217/Y (NAND2X6)                     0.09 &     1.56 r
+  AES_CORE_DATAPATH/KEY_EXPANDER/enc_dec (key_expander)
+                                                          0.00       1.56 r
+  AES_CORE_DATAPATH/KEY_EXPANDER/U8/Y (BUFX16)            0.14 @     1.71 r
+  AES_CORE_DATAPATH/KEY_EXPANDER/U9/Y (INVX16)            0.06 @     1.77 f
+  AES_CORE_DATAPATH/KEY_EXPANDER/U64/Y (AO22X1)           0.38 @     2.15 f
+  AES_CORE_DATAPATH/KEY_EXPANDER/g_in[29] (key_expander)
+                                                          0.00       2.15 f
+  AES_CORE_DATAPATH/U2030/Y (NAND2X1)                     0.18 &     2.32 r
+  AES_CORE_DATAPATH/U2032/Y (AND3X4)                      0.21 &     2.53 r
+  AES_CORE_DATAPATH/U2033/Y (NAND3X4)                     0.11 &     2.65 f
+  AES_CORE_DATAPATH/SBOX/sbox_in[29] (sBox)               0.00       2.65 f
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/sbox_in[5] (sBox_8_3)
+                                                          0.00       2.65 f
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U7/Y (CLKINVX1)          0.10 &     2.74 r
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U2/Y (CLKINVX1)          0.15 &     2.90 f
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U65/Y (CLKINVX1)         0.09 &     2.98 r
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U191/Y (NAND2X1)         0.08 &     3.06 f
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U192/Y (NAND2X2)         0.13 &     3.19 r
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U75/Y (XOR2X1)           0.20 &     3.39 f
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U45/Y (OA22X1)           0.41 &     3.80 f
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U28/Y (XOR2X2)           0.17 &     3.97 r
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U32/Y (XOR2X1)           0.22 &     4.19 f
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U31/Y (NAND2X2)          0.11 &     4.30 r
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U22/Y (XNOR2X1)          0.16 &     4.46 f
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/U20/Y (XOR2X1)           0.17 &     4.63 f
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/out_gf_pp_reg_3_/D (DFFHQX2)
+                                                          0.00 &     4.63 f
+  data arrival time                                                  4.63
+
+  clock CLK (rise edge)                                   4.50       4.50
+  clock network delay (propagated)                        0.29       4.79
+  AES_CORE_DATAPATH/SBOX/SBOX_3_/out_gf_pp_reg_3_/CK (DFFHQX2)
+                                                          0.00       4.79 r
+  library setup time                                     -0.16       4.63
+  data required time                                                 4.63
+  --------------------------------------------------------------------------
+  data required time                                                 4.63
+  data arrival time                                                 -4.63
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

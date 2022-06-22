@@ -3,7 +3,7 @@
 NTHU CS. 11010 CS613500 VLSI Physical Design Automation.
 <br/>
 
-### Lab1
+### Homework 1: P&R Tool
 
 ### Lab2
 

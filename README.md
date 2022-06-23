@@ -21,9 +21,10 @@ NTHU CS. 11010 CS613500 VLSI Physical Design Automation.
 
 ## Final Project: Routing with Cell Movement Advanced
 - **2021 ICCAD CAD Contest Problem B**
-- Flowchart
+- Base on the [repo](https://github.com/jacky860226/ICCAD-2021-B) provided by TA
+- Flowchart <br/>
 ![](imgs/final2.png)
-- Final score & runtime
+- Final score & runtime <br/>
 ![](imgs/final1.png)
 
 

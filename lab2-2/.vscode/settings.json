@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "iosfwd": "cpp",
+        "random": "cpp",
+        "__split_buffer": "cpp",
+        "deque": "cpp",
+        "iostream": "cpp",
+        "queue": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp",
+        "stack": "cpp",
+        "ostream": "cpp",
+        "unordered_map": "cpp"
+    }
+}

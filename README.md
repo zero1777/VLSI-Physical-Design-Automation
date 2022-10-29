@@ -3,6 +3,8 @@
 NTHU CS. 11010 CS613500 VLSI Physical Design Automation.
 <br/>
 
+**Remark: Lab2-2 is just for fun :)**
+
 ## Homework 1: P&R Tool
 - Utilize a P&R tool (Synopsys IC Compiler) to do APR (Automatic Placement and Routing) to generate a layout.
 ![](imgs/hw1.png)
